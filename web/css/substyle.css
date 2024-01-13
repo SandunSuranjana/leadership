@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+
+body {
+  background: #gray; !important;
+}
+body .container {
+  max-width: 1100px;
+}
+#filter-buttons button {
+  border-radius: 3px;
+  background: orange;
+  border-color: transparent;
+}
+#filter-buttons button:hover {
+  background: #ddd;
+}
+#filter-buttons button.active {
+  color: orange;
+  background: black;
+}
+#filterable-cards .card {
+  width: 15rem;
+  border: 2px solid transparent;
+}
+#filterable-cards .card.hide {
+  display: none;
+}
+@media (max-width: 600px) {
+  #filterable-cards {
+    justify-content: center;
+  }
+  #filterable-cards .card {
+    width: calc(100% / 2 - 5px);
+  }
+}
+img{
+  border-radius: 10px;
+  transition: transform .5s ease;
+}
+.image {
+  position: relative;
+  width: 240px;
+}
+
+.image__img {
+  display: block;
+  width: 100%;
+}
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  margin-top: 5px;
+  margin-left: 5px;
+  left: 0;
+  width: 248px;
+  height: 240px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: 'Optima', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+  backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+  background: black;
+}
+
+.image__overlay>* {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+.image__overlay:hover>* {
+  transform: translateY(0);
+}
+
+.image__title {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.image__description {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+  color: white;
+}
+.image img {
+  transform-origin: 50% 65%;
+  transition: transform 1s, filter 1s ease-in-out;
+  filter: brightness(100%);
+}
+
+/* The Transformation */
+.image:hover img {
+  filter: brightness(100%);
+  transform: scale(1.03);
+}
+.card-view {
+  padding: 12px;
+}
+
+
+.class-card1 {
+
+  background-color: var(--white);
+  border-radius: var(--radius-10);
+  height: 700px;
+  width: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+  display: flex;  
+}
+.figures {
+  margin-top: 20px;
+  background-color: var(--white);
+  border-radius: var(--radius-10);
+  height: auto;
+  width: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+  display: flex;  
+}
+.figures p{
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.figures img:hover{
+ transform: scale(1.04);
+}
+h2{
+  margin-top: 20px;
+  color: #044454;
+  font-family: optima;
+}
+.subclass {
+  background-color: var(--white);
+  border-radius: var(--radius-10);
+  margin: 6px;
+  height: 700px;
+  width: 33%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+}
+.subclass img{
+  width: 93%;
+  height: 220px;
+}
+.subclass h5,h6,img{
+  margin: 10px;
+}
+.subclass h5{
+  color: #044454;
+}
+.class-card1 h2,h6, h5{
+  font-family: optima;
+}
+.custom-block-wrap {
+  background: var(--white-color);
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.custom-block-wrap:hover {
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+}
+
+.custom-block-body {
+  padding: 30px;
+}
+
+.custom-block-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-block .custom-btn {
+  border-radius: 0;
+  display: block;
+}
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+table{
+  margin: 10px;
+
+}
+.mb-3{
+  color: #362204;
+}
+.box{
+  width: 98%;
+  height: 320px;
+  margin-left: 15px;
+  margin-top: 20px;
+  background-color: #908e94;
+  overflow: hidden;
+  display: flex;  
+}
+.box p{
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.box img{
+  width: 500px;
+  height: 300px;
+  border-radius: 0px;
+}

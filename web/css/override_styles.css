@@ -1,0 +1,43 @@
+.down-svg {
+  filter: invert(1);
+  width: 70px;
+}
+
+.copyright {
+  padding: 1em !important;
+}
+
+@media (max-width: 768px) {
+  .navbar-custom {
+    margin-left: 0;
+    padding: 1em;
+    background: none;
+    box-shadow: none;
+  }
+  
+  .navbar-brand h1 {
+    margin: 0;
+  } 
+
+  .down-svg {
+    width: 40px;
+  }
+
+  .container {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex
+  }
+
+  .resp-box {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .resp-reverse {
+    flex-direction: column-reverse;
+  }
+}
